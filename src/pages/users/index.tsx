@@ -2,6 +2,7 @@ import { Box, Button, Flex, Heading, Icon, Text, Table, Thead, Tbody, Tr, Th, Td
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
 import { Header } from '../../components/Header';
+import { Pagination } from '../../components/Pagination';
 import { Sidebar } from '../../components/Sidebar';
 
 export default function UserLust(){
@@ -59,6 +60,7 @@ export default function UserLust(){
                         </Tr>
                     </Tbody>
                 </Table>
+                <Pagination />
             </Box>
           </Flex>  
         </Box>
