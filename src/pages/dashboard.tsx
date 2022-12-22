@@ -64,7 +64,7 @@ export default function Dashboard() {
             <Sidebar/>
             <SimpleGrid flex="1" gap="4" minChildWidth="328px" >
                 <Box 
-                    p="8"
+                    p={["6", "8"]}
                     bg="gray.800"
                     borderRadius={8}
                     pb="4">
@@ -72,7 +72,7 @@ export default function Dashboard() {
                     <Chart type="area" options={options} series={series}  height={160}/>
                 </Box>
                 <Box 
-                    p="8"
+                    p={["6", "8"]}
                     bg="gray.800"
                     borderRadius={8}>
                     <Text fontSize="lg" mb="4">Abertura</Text>
