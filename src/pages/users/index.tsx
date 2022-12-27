@@ -22,7 +22,7 @@ import { Sidebar } from '../../components/Sidebar';
 
 export default function UserLust(){
     return(
-        <Box>
+        <Box as="div">
           <Header/>
           <Flex w="100%" my="6" mx="auto" px="6" maxWidth={1480}>
             <Sidebar/>
