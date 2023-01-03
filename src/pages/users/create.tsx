@@ -23,6 +23,7 @@ type CreateUserFormData = {
     name: string;
     email: string;
     password: string;
+    password_confirmation: string;
   }
   
   const createUserFormSchema = yup.object().shape({
@@ -35,7 +36,7 @@ type CreateUserFormData = {
   });
   
 export default function CreateUser(){
-    const { register, handleSubmit, formState } = useForm({
+    const { register, handleSubmit, formState } = useForm<CreateUserFormData>({
         resolver : yupResolver(createUserFormSchema)
     })
 
